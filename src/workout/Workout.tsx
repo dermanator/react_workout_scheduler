@@ -205,15 +205,23 @@ export function Workout() {
     ),
   }));
 
-  console.log({totals})
+  console.log({ totals });
 
   return (
     <table>
       <tbody>
-      <tr>
-      <td style={{width: "300px", textAlign: "left", verticalAlign: "top"}}><pre>{JSON.stringify(schedule, null, 2)}</pre></td>
-      <td style={{width: "300px", textAlign: "left", verticalAlign: "top"}}><pre>{JSON.stringify(totals, null, 2)}</pre></td>
-      </tr>
+        <tr>
+          <td
+            style={{ width: "300px", textAlign: "left", verticalAlign: "top" }}
+          >
+            <pre>{JSON.stringify(schedule, null, 2)}</pre>
+          </td>
+          <td
+            style={{ width: "300px", textAlign: "left", verticalAlign: "top" }}
+          >
+            <pre>{JSON.stringify(totals, null, 2)}</pre>
+          </td>
+        </tr>
       </tbody>
     </table>
   );
